@@ -7,6 +7,7 @@
   --text-green: #0ed138;
   --text-white: #ffffff;
   --text-gray: #46464683;
+  --text-red: #de6666;
 
   --bg-color: #f0f7ff;
   --bg-light-color: #ffffff;
@@ -72,8 +73,25 @@ strong {
 .green-text {
   color: var(--text-green);
 }
+.red-text {
+  color: var(--text-red);
+}
 .bold-text {
   font-weight: 700;
+}
+
+/* icons sizing */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
 @media only screen and (max-width: 600px) {

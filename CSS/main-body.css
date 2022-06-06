@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   gap: 2rem;
 }
 .play-circle {
@@ -55,7 +54,7 @@
 
 /* section two */
 .section-two {
-  height: 30rem;
+  height: 35rem;
   background-color: var(--text-white);
   border-radius: var(--br-radius);
   display: flex;
@@ -68,7 +67,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  box-sizing: border-box;
   padding: 2rem 2rem;
 }
 .leaderboad-text {
@@ -132,7 +130,79 @@
   color: var(--text-gray);
 }
 
+.people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.people > div {
+  width: 25rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: flex-start;
+}
+.material-icons.count {
+  font-size: 6rem;
+}
+.people div .count {
+  font-size: 2rem;
+}
+.blue-text-people {
+  color: #2e2e86;
+}
+
 /* right section style */
 .right-section {
   flex: 0.35;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* backlog styles */
+
+/* section one */
+.backlog {
+  height: 17rem;
+  background-color: var(--text-white);
+  border-radius: var(--br-radius);
+}
+.backlog-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 1.5rem;
+}
+.backlog-nav h2:first-child {
+  margin-right: auto;
+}
+.backlog-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.backlog-details > div {
+  width: 7rem;
+  height: 9rem;
+  background-color: var(--bg-color);
+  padding: 2rem 1rem;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.lesson-count {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text-blue);
+}
+.lesson-text {
+  font-size: 1.2rem;
 }
