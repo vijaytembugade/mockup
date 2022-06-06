@@ -1,0 +1,138 @@
+.main {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* left section styles */
+
+.left-section {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* section one */
+.resume-course {
+  width: 100%;
+  background-color: var(--bg-pink-color);
+  height: 10rem;
+  border-radius: var(--br-radius);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 2rem;
+}
+.play-circle {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2rem;
+  border-radius: 100%;
+  background-color: var(--text-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-circle .play-img {
+  width: 2.5rem;
+}
+
+.resume-course-text {
+  display: flex;
+  gap: 0.45rem;
+  flex-direction: column;
+}
+.resume-course-arraw {
+  margin-left: auto;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.resume-course-arraw span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* section two */
+.section-two {
+  height: 30rem;
+  background-color: var(--text-white);
+  border-radius: var(--br-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.leaderboard-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+}
+.leaderboad-text {
+  margin-right: auto;
+}
+.overall-text {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+.overall-text span {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.rank-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  border-bottom: 3px solid rgb(207, 207, 207);
+  margin: 2rem;
+}
+
+.ranke-data .part-three,
+.rank-data .part-one {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.rank-data .part-one .current-rank {
+  font-weight: 700;
+  height: 5rem;
+  font-size: 3.5rem;
+  position: relative;
+}
+.rank-data .part-one .current-rank-text {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--text-gray);
+}
+.rank-data .part-one .current-rank sup {
+  position: absolute;
+  top: -1.5rem;
+  font-size: 1.6rem;
+}
+.rank-data .part-two img {
+  width: 7.5rem;
+}
+
+.rank-data .part-three .percentile {
+  font-weight: 700;
+  height: 5rem;
+  font-size: 3.5rem;
+  position: relative;
+}
+.rank-data .part-three .percentile-text {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--text-gray);
+}
+
+/* right section style */
+.right-section {
+  flex: 0.35;
+}

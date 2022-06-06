@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  /* text colors */
+  --text-blue: #0078ff;
+  --text-pink: #ff1787;
+  --text-green: #0ed138;
+  --text-white: #ffffff;
+  --text-gray: #46464683;
+
+  --bg-color: #f0f7ff;
+  --bg-light-color: #ffffff;
+  --bg-pink-color: #fff0f7;
+
+  --gradiant: linear-gradient(
+    90deg,
+    rgba(106, 100, 224, 1) 0%,
+    rgba(117, 138, 240, 1) 35%,
+    rgba(130, 180, 240, 1) 85%,
+    rgba(131, 183, 253, 1) 100%
+  );
+
+  /* border-radius */
+  --br-radius: 2rem;
+  /* font family */
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 2rem;
+  max-width: 1920px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.gray-text {
+  color: var(--text-gray);
+}
+.pink-text {
+  color: var(--text-pink);
+}
+.blue-text {
+  color: var(--text-blue);
+}
+.green-text {
+  color: var(--text-green);
+}
+.bold-text {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 75%;
+    margin: 0.6rem;
+  }
+}
