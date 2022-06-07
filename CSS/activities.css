@@ -1,0 +1,126 @@
+.activities {
+  min-height: 35rem;
+  height: fit-content;
+  background-color: var(--text-white);
+  margin-top: 2rem;
+  border-radius: var(--br-radius);
+}
+.activities-nav {
+  display: flex;
+  padding: 2.5rem;
+}
+.activities-nav h1:first-child {
+  margin-right: auto;
+}
+
+.activities-tabs {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 3rem;
+}
+
+.activity-container .tab {
+  min-width: 30rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--br-radius);
+}
+.activity-container .tab .right-arraw {
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--text-gray);
+}
+.activity-container .tab .right-arraw:hover {
+  color: black;
+}
+
+.tab.pinkish {
+  background-color: var(--bg-pink-color);
+}
+.tab.bluish {
+  background-color: var(--bg-color);
+}
+
+.activity-circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.activity-circle.bluish-bg {
+  background-color: var(--text-blue);
+}
+.activity-circle.greenish-bg {
+  background-color: var(--text-green);
+}
+.activity-circle.pinkish-bg {
+  background-color: var(--text-pink);
+}
+.activity-circle.orangic-bg {
+  background-color: rgb(234, 87, 46);
+}
+
+.activity-circle .activity-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dot {
+  font-size: 4rem;
+  color: var(--text-blue);
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+.activity-subtitle {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .activity-content h2 {
+    font-size: 1.2rem;
+  }
+  .activities-tabs {
+    padding: 1rem;
+  }
+  .activity-container .tab {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+  .activity-circle {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .activities-nav h1 {
+    font-size: 1.2rem;
+  }
+  .activities-nav h2 {
+    font-size: 1.1rem;
+  }
+  .activities-tabs {
+    justify-content: center;
+    align-items: center;
+  }
+}

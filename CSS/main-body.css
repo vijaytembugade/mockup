@@ -15,6 +15,7 @@
 /* section one */
 .resume-course {
   width: 100%;
+  min-height: fit-content;
   background-color: var(--bg-pink-color);
   height: 10rem;
   border-radius: var(--br-radius);
@@ -91,7 +92,7 @@
   margin: 2rem;
 }
 
-.ranke-data .part-three,
+.rank-data .part-three,
 .rank-data .part-one {
   display: flex;
   text-align: center;
@@ -100,8 +101,12 @@
 }
 .rank-data .part-one .current-rank {
   font-weight: 700;
-  height: 5rem;
+  padding: 1rem;
   font-size: 3.5rem;
+  background-image: var(--gradiant);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 .rank-data .part-one .current-rank-text {
@@ -109,10 +114,16 @@
   font-weight: bold;
   color: var(--text-gray);
 }
-.rank-data .part-one .current-rank sup {
+.rank-data .part-one .current-rank p sup {
   position: absolute;
   top: -1.5rem;
+  right: 0.7rem;
   font-size: 1.6rem;
+  background-image: var(--gradiant);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
 }
 .rank-data .part-two img {
   width: 7.5rem;
@@ -120,8 +131,13 @@
 
 .rank-data .part-three .percentile {
   font-weight: 700;
-  height: 5rem;
+  padding: 1rem;
   font-size: 3.5rem;
+
+  background-image: var(--gradiant);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 .rank-data .part-three .percentile-text {
@@ -160,6 +176,7 @@
 .right-section {
   flex: 0.35;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -184,7 +201,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .backlog-details > div {
   width: 7rem;
@@ -205,4 +222,185 @@
 }
 .lesson-text {
   font-size: 1.2rem;
+}
+/* section two */
+.diagnostic {
+  border-radius: var(--br-radius);
+  margin-top: 2rem;
+  height: 28rem;
+  background-color: var(--text-white);
+  background: var(--gradiant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.main-diagnostic {
+  width: 97%;
+  height: 27rem;
+  background-color: var(--text-white);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.diagnostic-img img {
+  width: 21rem;
+}
+.diagnostic-quiz {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.diagnostic-quiz div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2e2e86;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.diagnostic-count {
+  font-size: 2rem;
+}
+.diagnostic-btn {
+  width: 100%;
+  padding: 1rem 3rem;
+}
+.diagnostic-btn button {
+  background: var(--gradiant);
+  height: fit-content;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: var(--br-radius);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--text-white);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.diagnostic-btn button:hover {
+  background: var(--rev-gradiant);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.diagnostic-badge {
+  position: absolute;
+  top: 0rem;
+  right: 3rem;
+  width: 7rem;
+  height: 2rem;
+  background-color: #7676ee;
+  text-align: center;
+  z-index: 1;
+  color: var(--text-white);
+  font-weight: 700;
+}
+.triangle {
+  top: 2rem;
+  position: absolute;
+  width: 100%;
+}
+.tr {
+  width: 100%;
+  padding-bottom: 15%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  width: 100%;
+  height: 100%;
+  background: #7676ee;
+  transform: rotate(30deg) skewX(-30deg);
+  transform-origin: top right;
+}
+
+@media only screen and (max-width: 1000px) {
+  .backlog-details > div {
+    width: 6rem;
+    height: 8rem;
+    gap: 1.2rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .rank-data {
+    justify-content: space-evenly;
+    padding: 3rem 2rem;
+    margin: 1rem;
+  }
+
+  .rank-data .part-one .current-rank {
+    font-size: 2rem;
+  }
+  .rank-data .part-one .current-rank p sup {
+    font-size: 1rem;
+  }
+  .rank-data .part-three .percentile {
+    font-size: 2rem;
+  }
+  .rank-data .part-two img {
+    width: 5rem;
+  }
+  .leaderboad-text h1 {
+    font-size: 1.5rem;
+  }
+  .blue-text-people {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .rank-data .part-two img {
+    width: 3rem;
+  }
+  .resume-course-text h2 {
+    font-size: 1.2rem;
+  }
+  .rank-data {
+    padding: 3rem 1rem;
+    margin: 0rem;
+  }
+  .people > div {
+    width: 15rem;
+    font-size: 1.2rem;
+  }
+  .diagnostic-img img {
+    width: 100%;
+  }
+  .diagnostic-btn {
+    padding: 1rem 1rem;
+  }
+  .play-circle {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .play-circle .play-img {
+    width: 2rem;
+  }
+  .resume-course-text .status {
+    display: none;
+  }
+  .overall-text {
+    margin-right: 0rem;
+  }
+  .backlog-nav h2 {
+    font-size: 1.2rem;
+  }
+  .backlog-details {
+    gap: 0.5rem;
+  }
+  .lesson-text {
+    font-size: 1rem;
+  }
 }

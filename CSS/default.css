@@ -14,11 +14,18 @@
   --bg-pink-color: #fff0f7;
 
   --gradiant: linear-gradient(
-    90deg,
+    -180deg,
     rgba(106, 100, 224, 1) 0%,
     rgba(117, 138, 240, 1) 35%,
     rgba(130, 180, 240, 1) 85%,
     rgba(131, 183, 253, 1) 100%
+  );
+  --rev-gradiant: linear-gradient(
+    -180deg,
+    rgba(131, 183, 253, 1) 0%,
+    rgba(130, 180, 240, 1) 35%,
+    rgba(117, 138, 240, 1) 55%,
+    rgba(106, 100, 224, 1) 100%
   );
 
   /* border-radius */
